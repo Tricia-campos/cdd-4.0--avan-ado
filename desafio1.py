@@ -1,21 +1,5 @@
-def piramide(n):
-    for i in range(1,n+1):
-        for x in range(i):
-            print(i, end=" ")
-        print()
-def piramide2(n):
-    for i in range(n+1):
-        for x in range(1,i+1):
-            print(x, end=" ")
-        print()
-
-def vogais(txt):
-    cont = 0
-    for x in txt:
-        if x in "aeiouAEIOU":
-            cont+=1
-    print(f"O texto tem {cont} vogais")
-
+usuarios = []
+senhas = []
 
 def cadastro():
       while True:
@@ -51,9 +35,6 @@ def mostrar():
     for i in range(len(usuarios)):
         print(f"Usuário: {usuarios[i]} - Senha: {senhas[i]}")
 
-def sair():
-      print("Finalizando...")
-
 def menu():
       while True:
             print(f" BEM VINDO!!\n"
@@ -70,19 +51,8 @@ def menu():
             elif bv == 3:
                   mostrar()
             elif bv == 4:
-                  print("finalizando")
+                  print("finalizado")
                   break
             else:
                   print("invalido")
-
-
-def inverterNomes(nome1,nome2,nome3,nome4,nome5):
-    nomes = [""] * 5
-    nomes[0] = nome1
-    nomes[1] = nome2
-    nomes[2] = nome3
-    nomes[3] = nome4
-    nomes[4] = nome5
-    print(nomes)
-    nomes.reverse()
-    print(nomes)
+menu()
