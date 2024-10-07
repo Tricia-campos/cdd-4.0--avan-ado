@@ -86,3 +86,11 @@ def inverterNomes(nome1,nome2,nome3,nome4,nome5):
     print(nomes)
     nomes.reverse()
     print(nomes)
+
+def soma(*numeros):
+    t= len(numeros)
+    soma = 0
+    for x in range(t):
+        soma = soma + numeros[x]
+    print(soma)
+
